@@ -1,8 +1,7 @@
 from tkinter import *
 from tkinter import messagebox
-import datetime 
+import pyautogui
 import os
-import random
 import time
 import platform
 operatingsystem = platform.system()
@@ -72,29 +71,6 @@ class look:
 
 flametext = "FLAMEAUTOCLICKER"
 
-x = datetime.datetime.now()
-ran = random.randint(2, 20)
-if ran == 6:
-  class secret:
-    g=("1500x1500")
-   
-
-  e = Tk()
-  e.geometry(secret.g)
-  e.title("secret")
-
-  msg = Label(e,text="your found secret!",font="bold")
-  o = Label(e,text="send this dev and get speacial flame version(and send screenshot) --> 47227f")
-  msg.place(x=400,y=300)
-  o.place(x=500,y=500)
-  e.mainloop()
-  
-os.system("python3 conf7.py")
-import pyautogui
-f = open("log.txt", "a")
-f.write((str)(x))
-f.write("start\n")
-f.close()
 
 root = Tk()
 root.iconphoto(False, PhotoImage(file='fire_1f525.png')) 
@@ -105,30 +81,13 @@ root.resizable(0, 0)
 bg = PhotoImage(file = "fire_1f525.png")
 
 
-messagebox.showinfo("lets start!", "thanks for downloading flame")
+messagebox.showinfo("lets start!", "thanks for downloading flame ")
 root.configure(background="black")
 root.resizable(0, 0)
 root.title("flame1.1 >> tkinter gui")
 
 def minecraft():
- mc = Tk()
- mc.geometry("1500x1500")
- mc.configure(background="black")
- mc.title("Flame")
- 
- def mcserver():
-  confing = Tk()
-  confing.configure(background="black")
-
-
- def server1config():
-  os.system("dir")
-
-
- mc = Button(mc,text="mc confing",command=mcserver,width=45,height=3)
- mc.pack()
-
- mc.mainloop()
+ pass
 
 def click():
 
@@ -649,8 +608,6 @@ else:
 
 
 label1 = Label(root, image=bg,bg="black") 
-x = datetime.datetime.now()
-datum = Label(root,text=x)
 text = Label(root, text=flametext,fg="red",bg="black",height=5,font="italic",cursor="cross")
 click = Button(root, text="click",command=click,fg="black",width=theme.wid,height=3,bg="gray",borderwidth=3,cursor="cross")
 warn = Button(root, text="warn",command=warn,bg="gray",fg="black",width=theme.wid,height=3,borderwidth=3,cursor="cross")
