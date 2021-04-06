@@ -17,22 +17,7 @@ class thm:
   x = 100
   fnt = ("Arial", 15)
 
-#themeselect = Tk()
-#themeselect.geometry("500x500")
-#themeselect.title("resultion picker")
 
-#def de():
- #if thm == "experimental":
-  # them = "test"
-
-#default = Button(themeselect,text="default",fg="black",height="2",width="19",command=de)
-
-#default.config(font=thm.fnt)
-
-#default.place(x=thm.x,y=100)
-#default.pack()
-
-#themeselect.mainloop()
 
 import thm_tk as tkinterthm
 
@@ -551,13 +536,7 @@ def click():
  text = Label(set,text="CLICK MODES",bg="black",fg="red")
  slow = Button(set,text="slow",bg="black",command=slow,fg="red",width=pl2.w,height=4)
  custom = Button(set,text="custom",width=pl2.w,height=4,bg="black",fg="red",command=custom)
- #faster = Button(set,text="faster",bg="gray",fg="black",command=faster,borderwidth=3,width=45,height=3)
  fast = Button(set,text="fast",bg="black",fg="red",borderwidth=3,width=pl2.w,height=4)
- #super = Button(set,text="super",bg="gray",fg="black", command=super,borderwidth=3,width=45,height=3)
- #mega = Button(set,text="mega",bg="gray",fg="black", command=mega,borderwidth=3,width=45,height=3)
- #legit = Button(set,text="legit",bg="gray",fg="black",command=legit,borderwidth=3,width=45,height=3)
- #mcaim = Button(set,text="mcaim",bg="gray",fg="black",command=mcaim,borderwidth=3,width=45,height=3)
- #slowmore = Button(set,bg="gray",command=slowmore,height=3,width=0,borderwidth=1)
  
  justconfig = ("Italic", 17)
  text.config(font=justconfig)
@@ -607,7 +586,7 @@ else:
   stylebtn = "gray"
 
 
-label1 = Label(root, image=bg,bg="black") 
+label1 = Label(root, image=bg,bg="black")
 text = Label(root, text=flametext,fg="red",bg="black",height=5,font="italic",cursor="cross")
 click = Button(root, text="click",command=click,fg="black",width=theme.wid,height=3,bg="gray",borderwidth=3,cursor="cross")
 warn = Button(root, text="warn",command=warn,bg="gray",fg="black",width=theme.wid,height=3,borderwidth=3,cursor="cross")
